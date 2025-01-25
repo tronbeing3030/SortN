@@ -1,0 +1,114 @@
+*{
+    font-family: "Poppins", sans-serif;
+    color-scheme: light dark;
+}
+
+html{
+    background: light-dark(#f3f3f3, #111111);
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    border: 1px solid light-dark(#00b0f09d, #002939);
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    box-shadow: 0 0 2em light-dark(#6cd6fc,#003e56);
+    transition: all 1s ease-in-out;
+}
+
+h1{
+    /* font-family: 'Century', serif; */
+    text-align: left;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 0 0 .2em .8em;
+}
+
+.graph{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    margin: 0 2.5em;
+}
+
+div{
+    background-color: #00b0f0;
+    width: 20px;
+    height: 100px;
+    margin: .11em;
+    transition: all .3s ease-in-out;
+}
+
+form{
+    padding: 1em;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: .2em auto auto .5em;
+}
+/* 
+form input{
+    width: 42%;
+    margin: 0 1em;
+    padding: .2em .8em;
+    border: 1px solid light-dark(#bdbdbd, #303030);
+    border-radius: .4em;
+    font-size: 1.2rem;    
+    transition: all .3s ease-in-out;
+} */
+
+form select{
+    padding: .1em .5em;
+    background: light-dark(#f3f3f3, #111111);
+    border: none;
+    border-radius: .2em;
+    font-size: 1.3rem;   
+    transition: all .3s ease-in-out;
+}
+
+form button{
+    border: none;
+    border-radius: .3em;
+    padding: .2em .8em;
+    margin-left: 2em;
+    background: #00b0f0;
+    color: light-dark(#f7f7f7,#002a2b);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+form button:hover{
+    box-shadow: 0 0 1em light-dark(#6cd6fc,#005272);
+}
+
+@media (max-width: 600px) {
+    form{
+        align-items: start;
+        margin-left: 1.2em;
+    }
+
+    form input{
+        margin: .3em 0 .7em 0;
+        width: 80%;
+    }
+
+    form select{
+        padding: .1em .1em .1em 0;
+    }
+
+    form button{        
+        margin: .3em 0 .7em 2em;
+    }
+}
